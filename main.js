@@ -8,7 +8,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 
 /*range di età:
 -minorenni --> sconto 20%
--magiorenni da 18 a 65
+-maggiorenni da 18 a 65
 -senior da 65 anni in poi --> sconto 40% 
 
 Prezzo del bigietto:
@@ -18,8 +18,22 @@ Output:
 -massimo due decimali*/
 
 
-//Fase di elaborazione//
+//Fase di elaborazione
 
-let min= 20/100;
-let sen= 40/100;
+let scontoPercentuale= 20/100;
+let scontoPercentuale2= 40/100;
+let chilometriPrezzo= 0.21;
+const priceChilometri= 0.21*chilometri;
 
+
+let chilometri= parseInt (prompt ("scrivimi i numeri di chilometri che vuoi percorrere"))
+let età= parseInt (prompt ("scrivimi la tua età"))
+
+
+if(età<18){
+    console.log(priceChilometri*scontoPercentuale)
+} else if (età>=65){
+    console.log(priceChilometri*scontoPercentuale2)
+} else{
+    console.log(priceChilometri)
+}
