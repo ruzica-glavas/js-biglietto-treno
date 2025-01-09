@@ -9,7 +9,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 /*range di età:
 -minorenni --> sconto 20%
 -magiorenni da 18 a 65
--senior da 65 anni in poi --> sconto 65% 
+-senior da 65 anni in poi --> sconto 40% 
 
 Prezzo del bigietto:
 -0.21€/km
@@ -18,5 +18,8 @@ Output:
 -massimo due decimali*/
 
 
-//Fase di elaborazione
+//Fase di elaborazione//
+
+let min= 20/100;
+let sen= 40/100;
 
