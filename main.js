@@ -23,17 +23,18 @@ Output:
 let scontoPercentuale= 20/100;
 let scontoPercentuale2= 40/100;
 let chilometriPrezzo= 0.21;
-const priceChilometri= 0.21*chilometri;
+
 
 
 let chilometri= parseInt (prompt ("scrivimi i numeri di chilometri che vuoi percorrere"))
 let età= parseInt (prompt ("scrivimi la tua età"))
 
+const priceChilometri= 0.21*chilometri;
 
 if(età<18){
-    console.log(priceChilometri*scontoPercentuale)
+    console.log((priceChilometri*scontoPercentuale).toFixed(2))
 } else if (età>=65){
-    console.log(priceChilometri*scontoPercentuale2)
+    console.log((priceChilometri*scontoPercentuale2).toFixed(2))
 } else{
-    console.log(priceChilometri)
+    console.log((priceChilometri).toFixed(2))
 }
