@@ -32,9 +32,9 @@ let età= parseInt (prompt ("scrivimi la tua età"))
 const priceChilometri= 0.21*chilometri;
 
 if(età<18){
-    console.log((priceChilometri*scontoPercentuale).toFixed(2))
+    console.log(`Il totale del biglietto del treno è: ${(priceChilometri*scontoPercentuale).toFixed(2)}`)
 } else if (età>=65){
-    console.log((priceChilometri*scontoPercentuale2).toFixed(2))
+    console.log(`Il totale del biglietto del treno è: ${(priceChilometri*scontoPercentuale2).toFixed(2)}`)
 } else{
-    console.log((priceChilometri).toFixed(2))
+    console.log(`Il totale del biglietto del treno é: ${(priceChilometri).toFixed(2)}`)
 }
