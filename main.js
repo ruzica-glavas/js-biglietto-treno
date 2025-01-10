@@ -20,8 +20,8 @@ Output:
 
 //Fase di elaborazione
 
-let scontoPercentuale= 20/100;
-let scontoPercentuale2= 40/100;
+let scontoPercentuale= 0.80;
+let scontoPercentuale2= 0.60;
 let chilometriPrezzo= 0.21;
 
 
